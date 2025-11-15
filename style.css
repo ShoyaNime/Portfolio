@@ -152,10 +152,11 @@ nav {
   opacity: 0.1;
 }
 .header-img img {
-  width: 80%;
-  filter: grayscale(100%) contrast(2);
-  border-bottom-right-radius: 80%;
-  border-bottom-left-radius: 90%;
+  width: 75%;
+  margin-top:40px ;
+  filter: grayscale(100%) contrast(1);
+  border-bottom-right-radius: 45%;
+  border-bottom-left-radius: 45%;
 }
 .jumbotron h1 {
   font-size: 50px;
@@ -453,10 +454,8 @@ nav {
 
 /* tools */
 #tools {
-  overflow: hidden;
-  height: 1000px;
+  overflow-x: hidden;
 }
-
 .tools-content li i {
   font-size: 40px;
   color: #d8d8d8d8;

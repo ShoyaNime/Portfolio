@@ -8,25 +8,31 @@ $(window).scroll(function () {
     $("nav").removeClass("nav-black");
   }
 });
-
+ 
 // Animasi typing Header
 document.addEventListener("DOMContentLoaded", function () {
   new TypeIt(".typing", {
     loop: true,
   })
-    .type(" development")
-    .pause(600)
-    .move(-10, { delay: 10 })
-    .delete(1)
-    .type("D")
-    .pause(3000)
-    .move(10, { delay: 100 })
-    .delete(11, { delay: 200 })
     .type(" Desin")
-    .pause(500)
+    .pause(600)
     .move(-1, { delay: 100 })
     .type("g")
+    .move(10, { delay: 100 })
     .pause(3000)
+    .delete(12, { delay: 200 })
+    .type("Full-StackWebsite")
+    .pause(100)
+    .move(-7, { delay: 100 })
+    .type(" ")
+    .move(7,)
+    .pause(3000)
+    .delete(18, { delay: 200 })
+    .type("Mobiles")
+    .delete(1, { delay: 200 })
+    .type(" Application")
+    .pause(3000)
+    .delete(19, { delay: 100 })
     .move(null, { to: "END" })
     .go();
 });

@@ -1,1167 +1,826 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Porfolio</title>
 
-    <!-- Boostrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Porfolio</title>
 
-    <!-- Css -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="Responsive.css" />
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,500&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Css -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Responsive.css" />
 
-    <!-- link aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,500&display=swap"
+    rel="stylesheet" />
 
-    <!-- Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- link aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- contact form with email -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "YJ5wHUcl3iK9kWBZ4",
-        });
-      })();
-    </script>
-  </head>
-  <body>
-    <header>
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <div class="brand text-uppercase fw-medium">
-            <a class="navbar-brand" href="#">portfolio</a>
-            <i class="fa-solid fa-circle text-warning"></i>
-          </div>
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-          <button
-            class="navbar-menu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <input id="checkbox2" type="checkbox" />
-            <label class="toggle toggle2" for="checkbox2">
-              <div id="bar4" class="bars"></div>
-              <div id="bar5" class="bars"></div>
-              <div id="bar6" class="bars"></div>
-            </label>
-          </button>
+  <!-- contact form with email -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "YJ5wHUcl3iK9kWBZ4",
+      });
+    })();
+  </script>
+</head>
 
-          <div
-            class="collapse navbar-collapse p-lg-3 p-2"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav m-auto">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#about-us">About</a>
-              <a class="nav-link" href="#resume">Resume</a>
-              <a class="nav-link" href="#certificate">Certificate</a>
-              <a class="nav-link" href="#tools">Tools </a>
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-              <a class="nav-link" href="#contact">Contact</a>
-            </div>
+<body>
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <div class="brand text-uppercase fw-medium">
+          <a class="navbar-brand" href="#">portfolio</a>
+          <i class="fa-solid fa-circle text-warning"></i>
+        </div>
+
+        <button class="navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <input id="checkbox2" type="checkbox" />
+          <label class="toggle toggle2" for="checkbox2">
+            <div id="bar4" class="bars"></div>
+            <div id="bar5" class="bars"></div>
+            <div id="bar6" class="bars"></div>
+          </label>
+        </button>
+
+        <div class="collapse navbar-collapse p-lg-3 p-2" id="navbarNavAltMarkup">
+          <div class="navbar-nav m-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about-us">About</a>
+            <a class="nav-link" href="#resume">Resume</a>
+            <a class="nav-link" href="#certificate">Certificate</a>
+            <a class="nav-link" href="#tools">Tools </a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
-      </nav>
-      <!-- /Navbar  -->
+      </div>
+    </nav>
+    <!-- /Navbar  -->
 
-      <!-- Herro Section -->
-      <div class="herro-section position-relative container d-flex">
-        <span class="style-header-1"></span>
-        <span
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          class="style-header-2 z-n1"
-        ></span>
-        <p class="style-header-3 position-absolute fw-bold lh-sm">HELLO</p>
-        <div class="row col-12 pt-5 d-flex align-items-center">
-          <div class="jumbotron text-light mt-5 col-lg-6">
-            <p class="text-warning">Hello Semua</p>
-            <h1 class="fw-bolder">Saya Musthofa Ilmi</h1>
-            <p>
-              Saya Junior
-              <span class="typing text-warning">Web</span>
-            </p>
-            <p class="fw-lighter">
-              Ini adalah website Porfolio sederhana dari saya, Website ini
-              memberikan informasi berupa about, tools & skill, porfolio,
-              dan contact us. jika ada pertanyaan lebih lanjut klik tombol di
-              bawah
-            </p>
-            <p class="position-relative mt-5">
-              Let's talk
-              <a href="#contact">
-                <i
-                  class="ms-2 rounded-circle position-absolute border fa-solid fa-arrow-right"
-                ></i>
-              </a>
-            </p>
+    <!-- Herro Section -->
+    <div class="herro-section position-relative container d-flex">
+      <span class="style-header-1"></span>
+      <span data-aos="zoom-in" data-aos-duration="1000" class="style-header-2 z-n1"></span>
+      <p class="style-header-3 position-absolute fw-bold lh-sm">HELLO</p>
+      <div class="row col-12 pt-5 d-flex align-items-center">
+        <div class="jumbotron text-light mt-5 col-lg-6">
+          <p></p>
+          <h1 class="fw-bolder">Saya Musthofa Ilmi</h1>
+          <p>
+            <span class="typing text-warning">UI/UX</span>
+          </p>
+          <p class="fw-lighter">
+            Ini adalah website Porfolio sederhana dari saya, Website ini
+            memberikan informasi berupa about, tools & skill, porfolio,
+            dan contact us. jika ada pertanyaan lebih lanjut klik tombol di
+            bawah
+          </p>
+          <p class="position-relative mt-5">
+            Let's talk
+            <a href="#contact">
+              <i class="ms-2 rounded-circle position-absolute border fa-solid fa-arrow-right"></i>
+            </a>
+          </p>
+        </div>
+        <div class="header-img col-lg-6 ms-auto d-flex align-items-center justify-content-center z-3">
+          <img src="Asset/foto.png" alt="img" />
+          <div class="social-media">
+            <a data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="500"
+              class="Header-icon" href="https://web.facebook.com/musthofa.ilmi.16"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="800" data-aos-duration="500"
+              class="Header-icon"
+              href="https://api.whatsapp.com/send/?phone=6285259476727&text&type=phone_number&app_absent=0"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="1100" data-aos-duration="500"
+              class="Header-icon" href="https://github.com/shoya-m1?tab=repositories"><i
+                class="fa-brands fa-github"></i></a>
+            <a data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="1400" data-aos-duration="500"
+              class="Header-icon"
+              href="https://www.instagram.com/shoya_m1/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i
+                class="fa-brands fa-instagram"></i></a>
+            <a data-aos="zoom-in" data-aos-easing="linear" data-aos-delay="1700" data-aos-duration="500"
+              class="Header-icon" href="https://twitter.com/Shoya_m1"><i class="fa-brands fa-twitter"></i></a>
           </div>
-          <div
-            class="header-img col-lg-6 ms-auto d-flex align-items-center z-3"
-          >
-            <img src="Asset/Untitled-2.png" alt="img" />
-            <div class="social-media">
-              <a
-                data-aos="zoom-in"
-                data-aos-easing="linear"
-                data-aos-delay="500"
-                data-aos-duration="500"
-                class="Header-icon"
-                href="https://web.facebook.com/musthofa.ilmi.16"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a
-                data-aos="zoom-in"
-                data-aos-easing="linear"
-                data-aos-delay="800"
-                data-aos-duration="500"
-                class="Header-icon"
-                href="https://api.whatsapp.com/send/?phone=6285259476727&text&type=phone_number&app_absent=0"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-              <a
-                data-aos="zoom-in"
-                data-aos-easing="linear"
-                data-aos-delay="1100"
-                data-aos-duration="500"
-                class="Header-icon"
-                href="https://github.com/shoya-m1?tab=repositories"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a
-                data-aos="zoom-in"
-                data-aos-easing="linear"
-                data-aos-delay="1400"
-                data-aos-duration="500"
-                class="Header-icon"
-                href="https://www.instagram.com/shoya_m1/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                data-aos="zoom-in"
-                data-aos-easing="linear"
-                data-aos-delay="1700"
-                data-aos-duration="500"
-                class="Header-icon"
-                href="https://twitter.com/Shoya_m1"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
+        </div>
+      </div>
+    </div>
+    <!-- /Herro Section -->
+    <!-- About us -->
+    <section id="about-us" style="padding-bottom: 200px; padding-top: 150px">
+      <div class="container position-relative">
+        <div class="style">
+          <span data-aos="fade-right" data-aos-duration="800" class="position-absolute"></span>
+          <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="linear"
+            data-aos-offset="100" class="position-absolute">
+            About
+          </p>
+        </div>
+        <div class="caption col-lg-6">
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="text-warning">
+            about-us
+          </p>
+          <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" class="text-light lh-1 fw-semibold">
+            Nama Saya Musthofa Ilmi
+          </h1>
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" class="text-light pt-2 fw-lighter">
+            Saya memiliki keterampilan dalam pengembangan full-stack web developer dan mobile application developer yang
+            berfokus pada solusi digital yang efektif dan profesional. Memiliki ketertarikan kuat dalam merancang
+            arsitektur sistem yang scalable serta membangun antarmuka yang responsif dan mudah digunakan.
+          </p>
+          <button data-aos="zoom-in-down" data-aos-duration="5000" data-aos-delay="2000"
+            class="rounded-3 fw-semimedium">
+            <a href="Asset/Musthofa-Ilmi_CV.pdf" download="CV.pdf">Download CV</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- /About us -->
+  </header>
+
+  <!-- Resume -->
+  <section id="resume" class="overflow-hidden pt-3 pt-lg-5">
+    <div class="container position-relative mb-5">
+      <div class="resume-style">
+        <span class="position-absolute rounded-circle z-n1" data-aos="fade-right" data-aos-duration="900"></span>
+        <div data-aos="zoom-in" data-aos-duration="800">
+          <p class="position-absolute fw-bolder">Resume</p>
+        </div>
+      </div>
+      <div class="caption col-lg-5 col-9 m-auto text-center mt-5">
+        <p data-aos="fade-down" data-aos-duration="900" class="text-warning">
+          Resume
+        </p>
+        <h1 data-aos="fade-up" data-aos-duration="900" data-aos-delay="500" class="text-light lh-1 fw-semibold">
+          Riwayat Pendidikan dan pengalaman saya
+        </h1>
+      </div>
+
+      <div class="resume-content pt-5">
+        <div class="d-flex justify-content-center align-items-start flex-column flex-lg-row gap-lg-5">
+          <div class="education col-lg-5">
+            <div class="pendidikan" data-aos="fade-right" data-aos-duration="900" data-aos-offset="100">
+              <i data-aos="fade-right" class="fa-solid fa-graduation-cap mb-5 me-2"></i>
+              <h2 class="text-light d-inline fw-normal">Pendidikan</h2>
+            </div>
+            <div class="line-education ms-3">
+              <div data-aos="fade-up" data-aos-duration="900">
+                <h4 class="text-warning">SMK Negeri 1 Bagor</h4>
+                <p class="text-secondary">2018 - 2021</p>
+                <p class="text-light">
+                  Berhasil lulus tepat waktu dalam mengampu Pendidikan di
+                  salah satu SMK di bagor nganjuk
+                </p>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="900">
+                <h4 class="text-warning">
+                  Universitas Nusantara PGRI Kediri
+                </h4>
+                <p class="text-secondary">2021</p>
+                <p class="text-light">
+                  Kuliah di Universitas nusantara PGRI kediri yang mengampu
+                  program studi teknik infomatika.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="education col-lg-5">
+            <div class="pendidikan" data-aos="fade-left" data-aos-duration="900" data-aos-offset="100">
+              <i class="fa-solid fa-briefcase mb-5 me-2"></i>
+              <h2 class="text-light d-inline fw-normal">Pengalaman</h2>
+            </div>
+
+            <div class="line-education ms-3">
+              <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+                <h4 class="text-warning">PT Joe Laptop</h4>
+                <p class="text-secondary">2019 - 2020</p>
+                <p class="text-light">
+                  Menjadi teknisi software yang bertanggung jawab
+                  mengidentifikasi serta memecahkan masalah perangkat lunak,
+                  melakukan instalasi, konfigurasi perangkat lunak, pembaruan
+                  sistem operasi dan aplikasi, serta memberikan pelatihan
+                  dasar kepada pengguna/pelanggan mengenai perangkat lunak dan
+                  sistem operasi di PT JOE LAPTOP Surabaya
+                </p>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+                <h4 class="text-warning">Dinas Kominfo Kabupaten Kediri</h4>
+                <p class="text-secondary">2024</p>
+                <p class="text-light">
+                  Berhasil menyelesaikan dua proyek website. yaitu website
+                  pendataan karyawan yang masuk ke ruang server, dan proyek
+                  website pengelolaan data barang pada sisi frontend
+                  menggunakan framework laravel. Kedua website tersebut
+                  membantu meningkatkan efisiensi operasional di Kementerian
+                  Komunikasi dan Informatika di Kabupaten Kediri.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- /Herro Section -->
-      <!-- About us -->
-      <section id="about-us" style="padding-bottom: 200px; padding-top: 150px">
-        <div class="container position-relative">
-          <div class="style">
-            <span
-              data-aos="fade-right"
-              data-aos-duration="800"
-              class="position-absolute"
-            ></span>
-            <p
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-              data-aos-easing="linear"
-              data-aos-offset="100"
-              class="position-absolute"
-            >
-              About
-            </p>
+    </div>
+  </section>
+  <!-- /Resume -->
+
+  <!-- certificate  -->
+  <section id="certificate">
+    <div class="container position-relative mt-3 pt-5">
+      <span class="position-absolute rounded-circle z-n1" data-aos="fade-left" data-aos-duration="900"></span>
+      <div data-aos="fade-right" data-aos-duration="900">
+        <p class="certificate-style position-absolute">Certificate</p>
+      </div>
+      <div class="mb-4 pb-lg-3 caption col-lg-5 text-center m-auto">
+        <p class="text-warning" data-aos="fade-down" data-aos-duration="900">
+          Certificate
+        </p>
+        <h1 class="text-light fw-semibold" data-aos="fade-up" data-aos-duration="900">
+          Sertifikat yang pernah saya dapatkan
+        </h1>
+      </div>
+
+      <div class="filter-sertif mb-3 d-flex flex-wrap gap-3 justify-content-center">
+        <button data-aos="zoom-in" data-aos-delay="100" data-aos-durration="3000"
+          class="filter-active px-3 fw-semibold py-1 filter-button" data-filter="">
+          All
+        </button>
+        <button data-aos="zoom-in" data-aos-delay="300" data-aos-durration="4000"
+          class="px-3 fw-semibold py-1 filter-button" data-filter="frontend">
+          FrontEnd
+        </button>
+        <button data-aos="zoom-in" data-aos-delay="500" data-aos-durration="5000"
+          class="px-3 fw-semibold py-1 filter-button" data-filter="ml">
+          Machine Learning
+        </button>
+        <button data-aos="zoom-in" data-aos-delay="700" data-aos-durration="6000"
+          class="px-3 fw-semibold py-1 filter-button" data-filter="backend">
+          BackEnd
+        </button>
+      </div>
+
+      <ul
+        class="certificate-content overflow-auto list-unstyled ms-lg-5 ps-lg-5 flex-wrap row col-12 pt-5 justify-content-md-start justify-content-center align-items-center">
+        <li class="col-lg-5 col-10" data-category="">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Memulai Dasar Pemrograman untuk Menjadi Pengembangan Software
+            </h5>
           </div>
-          <div class="caption col-lg-6">
-            <p
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-              class="text-warning"
-            >
-              about-us
-            </p>
-            <h1
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="400"
-              class="text-light lh-1 fw-semibold"
-            >
-              Nama Saya Musthofa Ilmi
-            </h1>
-            <p
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="600"
-              class="text-light fw-lighter"
-            >
-              Saya adalah mahasiswa universitas nusantara PGRI kediri yang
-              mengampu program studi teknik infomatika. Saya menyukai perihal
-              atau kegiatan yang berhubungan dengan pengembangan web dan
-              aplikasi. Untuk saat ini saya sedang mempelajari tentang web
-              desain, dan fullstack web devolepment.
-            </p>
-            <button
-              data-aos="zoom-in-down"
-              data-aos-duration="5000"
-              data-aos-delay="2000"
-              class="rounded-3 fw-semimedium"
-            >
-              <a href="Asset/Musthofa-Ilmi_CV.pdf" download="CV.pdf">Download CV</a>
+          <p class="text-light mt-3">
+            Mempelajari langkah menjadi pengembang software dari tahapan
+            analisis dan perencanaan sampai modifikasi perangkat lunak beserta
+            dokumentasi.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/390c0db06e2554b98439e0506cfb0493fbbb026b/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="frontend">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Belajar Membuat Front-End Web untuk Pemula
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Mempelajari materi mengenai DOM manipulation, Event, dan Web
+            Storage untuk meningkatkan fungsionalitas dan interaktifitas pada
+            website Anda.
+          </p>
+          <a href="https://dicoding.com/dicodingassets/coursecertificate/a6f3e48c49094f5ee79f7b287aec1f8427849565/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="backend">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Belajar Dasar Structured Query Language (SQL)
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Pelajari berbagai konsep dasar structured query language (SQL)
+            mulai dari pengenalan data dan basis data hingga berlatih basic
+            query.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/7500e5a0fbda5d2524f559b753934a063cab10ed/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Belajar Dasar Manajemen Proyek
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Mempelajari dasar manajemen proyek, siklus dan metodologi
+            manajemen proyek, hingga mengejar karir manajemen proyek.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/d58326a40c3181933c1af63a58310b299cdfcc39/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="frontend">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Belajar Dasar Pemrograman Web
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Pelajari komponen-komponen dasar HTML dan CSS yang merupakan
+            fondasi utama untuk menjadi front-end web developer.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/a26f4b40e84903814ca47a78e3757e6194fee6c4/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="frontend">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Belajar Tools Front-End Web Intermediate
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Mempelajari tools berstandar industri dengan Sass, Bootstrap, Lit,
+            Axios, dan Firebase dalam membangun aplikasi web yang efisien dan
+            powerful.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/5e30a76fd6b158f94e1dbf890f1313595ad8dacd/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="frontend">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Belajar Dasar Pemrograman JavaScript
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Pelajari dasar JavaScript, dari fundamental, sintaks dan fitur
+            ES6, hingga konsep automation test menggunakan framework populer.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/bfec21bde2a5c159e8de8bd71c72a08d4252a43a/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="frontend">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Menjadi Front-End Web Developer Expert
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Mempelajari teknik-teknik expert serta modern dalam membangun
+            website yang optimal pada seluruh perangkat, terutama pada
+            perangkat mobile.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/8cfb1c848a49c13d2c36a92a5782f37340271232/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="ml">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Memulai Pemrograman dengan Python
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Mempelajari dasar pemrograman Python hingga library populer yang
+            menjadi landasan tren industri seperti data science dan machine
+            learning.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/cf20e1c41171682a9b9d4b64b627cd2908032651/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="ml">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Belajar Machine Learning untuk Pemula
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Mempelajari materi dasar pengembangan machine learning dan langkah
+            menciptakan model machine learning pertama untuk memproses data.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/4cd407811c02d3487e1fe3350e7a902bba3c6e9b/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="ml">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Belajar Dasar Visualisasi Data
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Mempelajari teknik dasar untuk representasi hasil secara visual
+            sehingga dapat menceritakan dan mempresentasikan data secara
+            efektif.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/2765c632ba04fe1903cc0d4ecb3bfffb03ffe4af/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+        <li class="col-lg-5 col-10" data-category="frontend">
+          <div class="d-flex gap-3 align-items-center certificate-title">
+            <h5 class="text-warning text-start">
+              Belajar Fundamental Front-End Web Development
+            </h5>
+          </div>
+          <p class="text-light mt-3">
+            Mempelajari sintaks ES6, Web Component, dan Build Tools dalam
+            membangun website dengan teknik yang simple, reusable, dan
+            optimized.
+          </p>
+          <a
+            href="https://www.dicoding.com/dicodingassets/coursecertificate/edbb056cb2a52431d7093df05a1f43e420e59b6c/view">
+            <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /certificate  -->
+
+  <!-- Tools  -->
+  <section id="tools">
+    <div class="container position-relative mt-5 pt-5">
+      <span class="position-absolute rounded-circle z-n1" data-aos="fade-left" data-aos-duration="900"></span>
+      <div data-aos="fade-right" data-aos-duration="900">
+        <p class="tools-style position-absolute">Tools</p>
+      </div>
+      <div class="mb-5 pb-lg-5 caption col-lg-5 text-center m-auto">
+        <p class="text-warning" data-aos="fade-down" data-aos-duration="900">
+          Tools & Skills
+        </p>
+        <h1 class="text-light fw-semibold" data-aos="fade-up" data-aos-duration="900">
+          Tools & Skills yang saya Pelajari
+        </h1>
+      </div>
+
+      <ul class="mt-5 tools-content row flex-wrap gap-5 col-12 justify-content-center align-items-center"
+        style="list-style: none">
+        <li class="text-center col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900">
+          <i class="fa-brands fa-html5"></i>
+          <h4 class="lh-lg text-warning">Html</h4>
+          <p class="text-light">
+            Bahasa markup yang saya gunakan untuk membuat kerangkan pada
+            halaman website
+          </p>
+        </li>
+        <li class="text-center col-lg-3 col-md-5 col-9" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="300">
+          <i class="fa-brands fa-css3-alt"></i>
+          <h4 class="lh-lg text-warning">CSS</h4>
+          <p class="text-light">
+            Teknologi yang saya gunakan untuk mendesain komponen dalam sebuah
+            website
+          </p>
+        </li>
+        <li class="text-center col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900"
+          data-aos-delay="600">
+          <i class="fa-brands fa-square-js"></i>
+          <h4 class="lh-lg text-warning">JavaScript</h4>
+          <p class="text-light">
+            Bahasa pemrograman yang saya gunakan untuk membuat website menjadi
+            lebih interaktif
+          </p>
+        </li>
+        <li class="text-center col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900">
+          <i class="fa-brands fa-figma"></i>
+          <h4 class="lh-lg text-warning">Figma</h4>
+          <p class="text-light">
+            Tools yang biasa saya gunakan untuk membuat desain ui/ux halaman
+            web dan mobile
+          </p>
+        </li>
+        <li class="text-center col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900"
+          data-aos-delay="300">
+          <i class="fa-brands fa-bootstrap"></i>
+          <h4 class="lh-lg text-warning">Bootstrap</h4>
+          <p class="text-light">
+            Library CSS yang dapat membantu saya dalam pengembangan sebuah
+            halaman website
+          </p>
+        </li>
+        <li class="text-center col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900"
+          data-aos-delay="600">
+          <!-- <i class="fa-brands fa-php" style="font-size: 40px"></i> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="3.5em" height="3.5em" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12" />
+          </svg>
+          <h4 class="lh-md text-warning">Tailwind</h4>
+          <p class="text-light">
+            Library CSS yang dapat membantu saya dalam pengembangan sebuah
+            halaman website
+          </p>
+        </li>
+        <li class="text-center col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900">
+          <i class="fa-brands fa-react"></i>
+          <h4 class="lh-lg text-warning">React</h4>
+          <p class="text-light">
+            Library javascript yang membantu saya dalam pengembangan sebuah
+            halaman website
+          </p>
+        </li>
+        <li class="text-center col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900"
+          data-aos-delay="300">
+          <i class="fa-brands fa-php"></i>
+          <h4 class="lh-lg text-warning">Laravel</h4>
+          <p class="text-light">
+            Framework PHP yang membantu saya dalam pengembangan website pada
+            sisi server side
+          </p>
+        </li>
+        <li class="text-center col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900"
+          data-aos-delay="300">
+          <i class="fa-brands fa-laravel"></i>
+          <h4 class="lh-lg text-warning">Laravel</h4>
+          <p class="text-light">
+            Framework PHP yang membantu saya dalam pengembangan website pada
+            sisi server side
+          </p>
+        </li>
+        <li class="text-center mb-5 col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900"
+          data-aos-delay="600">
+          <img src="Asset/kotlin.png" alt="kotlin" />
+          <h4 class="lh-lg text-warning">Kotlin</h4>
+          <p class="text-light">
+            Tools yang membantu saya dalam penulisan kode css agar lebih
+            efisien
+          </p>
+        </li>
+         <li class="text-center mb-4 col-lg-3 col-md-5 col-10" data-aos="zoom-in" data-aos-duration="900"
+          data-aos-delay="300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
+            <path fill="#d8d8d8d8"
+              d="M12.135.003a2.6 2.6 0 0 0-1.42.344L2.55 5.06a2.6 2.6 0 0 0-.953.967l3.957 2.17a1.8 1.8 0 0 1 .603-.588l4.951-2.86a1.76 1.76 0 0 1 1.76 0l4.951 2.86a1.8 1.8 0 0 1 .526.46l3.921-2.265a2.6 2.6 0 0 0-.816-.744L13.291.347a2.6 2.6 0 0 0-1.152-.34Zm-.145 4.912a1.36 1.36 0 0 0-.68.182L6.36 7.953a1.35 1.35 0 0 0-.454.435l1.92 1.055a1.1 1.1 0 0 1 .31-.275l3.34-1.928a1.05 1.05 0 0 1 1.051 0l3.336 1.928a1 1 0 0 1 .238.199l.018-.01l-.002-.002l1.877-1.08a1.4 1.4 0 0 0-.373-.322l-4.95-2.86a1.36 1.36 0 0 0-.68-.178Zm10.432 1.149l-3.92 2.26a1.76 1.76 0 0 1 .2.812v5.715c0 .627-.332 1.21-.88 1.528l-4.95 2.86a1.8 1.8 0 0 1-.64.214v4.524a2.6 2.6 0 0 0 1.059-.313l8.162-4.713a2.58 2.58 0 0 0 1.289-2.23V7.297a2.6 2.6 0 0 0-.318-1.228Zm-20.937.238a2.6 2.6 0 0 0-.227.99v9.43c0 .918.491 1.767 1.293 2.229l8.162 4.713a2.6 2.6 0 0 0 1.225.336v-4.531a1.76 1.76 0 0 1-.833-.235L6.156 16.38a1.77 1.77 0 0 1-.877-1.528V9.136a1.8 1.8 0 0 1 .131-.676Zm16.67 2.223l-1.89 1.092a1.06 1.06 0 0 1 .124.46v3.856c0 .378-.2.72-.526.907l-3.336 1.93a1 1 0 0 1-.295.107v2.17c.152-.027.304-.078.44-.157l4.949-2.859a1.36 1.36 0 0 0 .68-1.18V9.136a1.36 1.36 0 0 0-.147-.607Zm-12.387.13a1.4 1.4 0 0 0-.088.481v5.715a1.36 1.36 0 0 0 .68 1.18l4.95 2.86c.194.112.412.166.627.177v-2.174a1.05 1.05 0 0 1-.46-.123L8.14 14.843a1.05 1.05 0 0 1-.532-.908v-3.853a1 1 0 0 1 .077-.38l-.034-.013z" />
+          </svg>
+          <h4 class="lh-lg text-warning">Jetpack Compose</h4>
+          <p class="text-light">
+            Framework PHP yang membantu saya dalam pengembangan website pada
+            sisi server side
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /Tools  -->
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="overflow-hidden">
+    <div class="position-relative container-xxl mt-5 pt-5">
+      <span class="position-absolute rounded-circle z-n1" data-aos="fade-right" data-aos-duration="900"></span>
+      <t class="position-absolute" data-aos="fade-left" data-aos-duration="900" data-aos-easing="liner">Portfolio</t>
+      <div class="caption m-auto col-lg-4 text-center">
+        <p class="text-warning" data-aos="fade-down" data-aos-duration="900">
+          My Project
+        </p>
+        <h1 class="text-light fw-bold" data-aos="fade-up" data-aos-duration="900">
+          Projek yang pernah saya buat
+        </h1>
+      </div>
+
+      <ul
+        class="content-portfolio list-unstyled container pt-5 d-flex flex-wrap justify-content-center me-3 gap-lg-4 gap-md-3 gap-2">
+        <li class="rounded-1 col-lg-5 col-sm-10 position-relative overflow-hidden" data-aos="zoom-in"
+          data-aos-duration="900">
+          <img class="object-fit-cover" src="Asset/portfolio1.png" alt="" />
+          <div class="z-3 position-absolute content-portfolio-1 bg-black row">
+            <div class="m-auto col-9">
+              <h2 class="text-warning">Food Delivery</h2>
+              <p class="text-secondary">Ui/Ux</p>
+              <p class="text-light fw-lighter">
+                Tampilan UI website pengiriman makanan yang di buat
+                menggunakan tools figma
+              </p>
+              <span class="fw-semibold">
+                <a
+                  href="https://www.figma.com/proto/eKgEo4BX3hi8wATZHlWpGK/Untitled?node-id=88-94&scaling=scale-down&page-id=0%3A1&starting-point-node-id=88%3A94">
+                  View More
+                  <i class="fa-solid fa-arrow-right ms-2" style="margin-top: -100px"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="rounded-1 col-lg-5 col-sm-10 position-relative overflow-hidden" data-aos="zoom-in"
+          data-aos-delay="400" data-aos-duration="900">
+          <img class="BookShelf object-fit-cover" src="Asset/portfolio2.png" alt="" />
+          <div class="z-3 position-absolute content-portfolio-1 bg-black row">
+            <div class="m-auto col-9">
+              <h2 class="text-warning">Book Shelf</h2>
+              <p class="text-secondary">Website</p>
+              <p class="text-light fw-lighter">
+                Web Peyimpanan buku dengan menggunakan metode penyimpanan web
+                storage
+              </p>
+              <span class="fw-semibold">
+                <a href="https://shoya-m1.github.io/BookShelf">
+                  View More
+                  <i class="fa-solid fa-arrow-right ms-2" style="margin-top: -100px"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="rounded-1 col-lg-5 col-sm-10 position-relative overflow-hidden" data-aos="zoom-in"
+          data-aos-duration="900">
+          <img class="object-fit-cover" src="Asset/restomap1.png" alt="" />
+          <div class="content-portfolio-1 z-3 position-absolute bg-black row">
+            <div class="m-auto col-9">
+              <h2 class="text-warning">Restomap</h2>
+              <p class="text-secondary">Website</p>
+              <p class="text-light fw-lighter">
+                Website katalog restorant yang mendukung fitur PWA
+                (Progressive Web Application)
+              </p>
+              <span class="fw-semibold">
+                <a href="http://restomap-v2.vercel.app/">
+                  View More
+                  <i class="fa-solid fa-arrow-right ms-2" style="margin-top: -100px"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="rounded-1 col-lg-5 col-sm-10 position-relative overflow-hidden" data-aos="zoom-in"
+          data-aos-duration="900" data-aos-delay="400">
+          <img class="object-fit-cover" src="Asset/portfolio4.png" alt="" />
+          <div class="z-3 position-absolute content-portfolio-1 bg-black row">
+            <div class="m-auto col-9">
+              <h2 class="text-warning">E-Commerce</h2>
+              <p class="text-secondary">Ui/Ux</p>
+              <p class="text-light fw-lighter">
+                Tampilan UI website e-commerce Electronik yang saya buat
+                menggunakan tools figma
+              </p>
+              <span class="fw-semibold">
+                <a
+                  href="https://www.figma.com/proto/F1YsUUhdtNNVTBnp6mRgqi/Untitled?type=design&node-id=1-2&t=jp50mtXwMcHADFgo-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design">
+                  View More
+                  <i class="fa-solid fa-arrow-right ms-2" style="margin-top: -100px"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /Portfolio -->
+
+  <!-- Contact -->
+  <section id="contact" class="overflow-hidden">
+    <div class="position-relative container mt-5 pt-5">
+      <span data-aos="fade-left" data-aos-duration="900"
+        class="style-contact z-n1 rounded-circle position-absolute"></span>
+      <div data-aos="zoom-in" data-aos-duration="900">
+        <p class="style-contact-text z-n1 position-absolute">Contact</p>
+      </div>
+
+      <div class="caption text-center">
+        <p class="text-warning" data-aos="fade-down" data-aos-duration="900">
+          Let's say hi
+        </p>
+        <h1 class="text-light fw-bold lh-1 mb-5" data-aos="fade-up" data-aos-duration="900">
+          Hubungi Saya
+        </h1>
+      </div>
+      <div class="d-flex justify-content-center gap-4 align-items-center flex-wrap">
+        <form id="contactForm" class="position-relative col-lg-5 py-lg-0 pt-5">
+          <input data-aos="fade-right" data-aos-duration="900" data-aos-delay="500"
+            class="col-12 border rounded-2 border-secondary px-3 mb-3" type="text" placeholder="Username" id="name"
+            name="name" required />
+          <input data-aos="fade-right" data-aos-duration="900" data-aos-delay="700"
+            class="col-12 border rounded-2 border-secondary p-3 mb-3" type="email" id="floatingInput"
+            placeholder="Email" name="email" required />
+          <textarea data-aos="fade-right" data-aos-duration="900" data-aos-delay="800"
+            class="border rounded-2 border-secondary p-3 col-12 mb-3" rows="7" placeholder="Pesan anda" name="message"
+            required></textarea>
+
+          <div class="col-12 d-flex">
+            <button id="button-sendform" data-aos="zoom-in-up" data-aos-duration="900" data-aos-delay="1000"
+              class="m-auto rounded-2 col-5 fw-semibold">
+              Kirim Pesan
             </button>
           </div>
-        </div>
-      </section>
-      <!-- /About us -->
-    </header>
+        </form>
 
-    <!-- Resume -->
-    <section id="resume" class="overflow-hidden pt-3 pt-lg-5">
-      <div class="container position-relative mb-5">
-        <div class="resume-style">
-          <span
-            class="position-absolute rounded-circle z-n1"
-            data-aos="fade-right"
-            data-aos-duration="900"
-          ></span>
-          <div data-aos="zoom-in" data-aos-duration="800">
-            <p class="position-absolute fw-bolder">Resume</p>
-          </div>
-        </div>
-        <div class="caption col-lg-5 col-9 m-auto text-center mt-5">
-          <p data-aos="fade-down" data-aos-duration="900" class="text-warning">
-            Resume
+        <ul class="addreas col-lg-5 py-lg-0 py-5 list-unstyled">
+          <p data-aos="fade-left" data-aos-durration="1000" data-aos-delay="500" class="text-light lh-sm">
+            Jika ada yang ingin di tanyakan silahkan hubungi saya melalui no
+            atau email dibawah
           </p>
-          <h1
-            data-aos="fade-up"
-            data-aos-duration="900"
-            data-aos-delay="500"
-            class="text-light lh-1 fw-semibold"
-          >
-            Riwayat Pendidikan dan pengalaman saya
-          </h1>
-        </div>
-
-        <div class="resume-content pt-5">
-          <div
-            class="d-flex justify-content-center align-items-start flex-column flex-lg-row gap-lg-5"
-          >
-            <div class="education col-lg-5">
-              <div
-                class="pendidikan"
-                data-aos="fade-right"
-                data-aos-duration="900"
-                data-aos-offset="100"
-              >
-                <i
-                  data-aos="fade-right"
-                  class="fa-solid fa-graduation-cap mb-5 me-2"
-                ></i>
-                <h2 class="text-light d-inline fw-normal">Pendidikan</h2>
-              </div>
-              <div class="line-education ms-3">
-                <div data-aos="fade-up" data-aos-duration="900">
-                  <h4 class="text-warning">SMK Negeri 1 Bagor</h4>
-                  <p class="text-secondary">2018 - 2021</p>
-                  <p class="text-light">
-                    Berhasil lulus tepat waktu dalam mengampu Pendidikan di
-                    salah satu SMK di bagor nganjuk
-                  </p>
-                </div>
-                <div data-aos="fade-up" data-aos-duration="900">
-                  <h4 class="text-warning">
-                    Universitas Nusantara PGRI Kediri
-                  </h4>
-                  <p class="text-secondary">2021</p>
-                  <p class="text-light">
-                    Kuliah di Universitas nusantara PGRI kediri yang mengampu
-                    program studi teknik infomatika.
-                  </p>
-                </div>
-              </div>
+          <li class="d-flex mt-4 mb-3">
+            <i data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700"
+              class="contact-icon text-light text-center me-4 fa-solid fa-envelope"></i>
+            <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="900">
+              <h5 class="text-warning">Email</h5>
+              <p class="text-light lh-1 fw-lighter">
+                ilmimusthofa8189@gmail.com
+              </p>
             </div>
-
-            <div class="education col-lg-5">
-              <div
-                class="pendidikan"
-                data-aos="fade-left"
-                data-aos-duration="900"
-                data-aos-offset="100"
-              >
-                <i class="fa-solid fa-briefcase mb-5 me-2"></i>
-                <h2 class="text-light d-inline fw-normal">Pengalaman</h2>
-              </div>
-
-              <div class="line-education ms-3">
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="900"
-                >
-                  <h4 class="text-warning">PT Joe Laptop</h4>
-                  <p class="text-secondary">2019 - 2020</p>
-                  <p class="text-light">
-                    Menjadi teknisi software yang bertanggung jawab
-                    mengidentifikasi serta memecahkan masalah perangkat lunak,
-                    melakukan instalasi, konfigurasi perangkat lunak, pembaruan
-                    sistem operasi dan aplikasi, serta memberikan pelatihan
-                    dasar kepada pengguna/pelanggan mengenai perangkat lunak dan
-                    sistem operasi di PT JOE LAPTOP Surabaya
-                  </p>
-                </div>
-                <div
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="900"
-                >
-                  <h4 class="text-warning">Dinas Kominfo Kabupaten Kediri</h4>
-                  <p class="text-secondary">2024</p>
-                  <p class="text-light">
-                    Berhasil menyelesaikan dua proyek website. yaitu website
-                    pendataan karyawan yang masuk ke ruang server, dan proyek
-                    website pengelolaan data barang pada sisi frontend
-                    menggunakan framework laravel. Kedua website tersebut
-                    membantu meningkatkan efisiensi operasional di Kementerian
-                    Komunikasi dan Informatika di Kabupaten Kediri.
-                  </p>
-                </div>
-              </div>
+          </li>
+          <li class="d-flex mb-2">
+            <i data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700"
+              class="contact-icon text-light text-center mt-2 me-4 fa-solid fa-phone"></i>
+            <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="900">
+              <h5 class="text-warning">No Telp</h5>
+              <p class="text-light fw-lighter">+62 85259476727</p>
+              <p class="text-light fw-lighter" style="margin-top: -15px">
+                +62 82198738908
+              </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Resume -->
-
-    <!-- certificate  -->
-    <section id="certificate">
-      <div class="container position-relative mt-3 pt-5">
-        <span
-          class="position-absolute rounded-circle z-n1"
-          data-aos="fade-left"
-          data-aos-duration="900"
-        ></span>
-        <div data-aos="fade-right" data-aos-duration="900">
-          <p class="certificate-style position-absolute">Certificate</p>
-        </div>
-        <div class="mb-4 pb-lg-3 caption col-lg-5 text-center m-auto">
-          <p class="text-warning" data-aos="fade-down" data-aos-duration="900">
-            Certificate
+          </li>
+          <li class="d-flex col-10">
+            <i data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700"
+              class="contact-icon text-light text-center me-4 p-auto fa-solid fa-location-dot"></i>
+            <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="900">
+              <h5 class="text-warning">Alamat</h5>
+              <p class="text-light lh-sm fw-lighter">
+                64474 Ds.Sidorejo Kec.Sawahan Kab.Anganjuk
+              </p>
+            </div>
+          </li>
+          <p data-aos="fade-left" data-aos-duration="900" class="text-light">
+            Anda juka bisa menghubungi saya melalui link media sosial
           </p>
-          <h1
-            class="text-light fw-semibold"
-            data-aos="fade-up"
-            data-aos-duration="900"
-          >
-            Sertifikat yang pernah saya dapatkan
-          </h1>
-        </div>
-
-        <div
-          class="filter-sertif mb-3 d-flex flex-wrap gap-3 justify-content-center"
-        >
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="100"
-            data-aos-durration="3000"
-            class="filter-active px-3 fw-semibold py-1 filter-button"
-            data-filter=""
-          >
-            All
-          </button>
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="300"
-            data-aos-durration="4000"
-            class="px-3 fw-semibold py-1 filter-button"
-            data-filter="frontend"
-          >
-            FrontEnd
-          </button>
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="500"
-            data-aos-durration="5000"
-            class="px-3 fw-semibold py-1 filter-button"
-            data-filter="ml"
-          >
-            Machine Learning
-          </button>
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="700"
-            data-aos-durration="6000"
-            class="px-3 fw-semibold py-1 filter-button"
-            data-filter="backend"
-          >
-            BackEnd
-          </button>
-        </div>
-
-        <ul
-          class="certificate-content overflow-auto list-unstyled ms-lg-5 ps-lg-5 flex-wrap row col-12 pt-5 justify-content-md-start justify-content-center align-items-center"
-        >
-          <li class="col-lg-5 col-10" data-category="">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Memulai Dasar Pemrograman untuk Menjadi Pengembangan Software
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Mempelajari langkah menjadi pengembang software dari tahapan
-              analisis dan perencanaan sampai modifikasi perangkat lunak beserta
-              dokumentasi.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/390c0db06e2554b98439e0506cfb0493fbbb026b/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="frontend">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Belajar Membuat Front-End Web untuk Pemula
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Mempelajari materi mengenai DOM manipulation, Event, dan Web
-              Storage untuk meningkatkan fungsionalitas dan interaktifitas pada
-              website Anda.
-            </p>
-            <a
-              href="https://dicoding.com/dicodingassets/coursecertificate/a6f3e48c49094f5ee79f7b287aec1f8427849565/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="backend">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Belajar Dasar Structured Query Language (SQL)
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Pelajari berbagai konsep dasar structured query language (SQL)
-              mulai dari pengenalan data dan basis data hingga berlatih basic
-              query.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/7500e5a0fbda5d2524f559b753934a063cab10ed/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Belajar Dasar Manajemen Proyek
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Mempelajari dasar manajemen proyek, siklus dan metodologi
-              manajemen proyek, hingga mengejar karir manajemen proyek.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/d58326a40c3181933c1af63a58310b299cdfcc39/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="frontend">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Belajar Dasar Pemrograman Web
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Pelajari komponen-komponen dasar HTML dan CSS yang merupakan
-              fondasi utama untuk menjadi front-end web developer.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/a26f4b40e84903814ca47a78e3757e6194fee6c4/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="frontend">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Belajar Tools Front-End Web Intermediate
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Mempelajari tools berstandar industri dengan Sass, Bootstrap, Lit,
-              Axios, dan Firebase dalam membangun aplikasi web yang efisien dan
-              powerful.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/5e30a76fd6b158f94e1dbf890f1313595ad8dacd/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="frontend">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Belajar Dasar Pemrograman JavaScript
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Pelajari dasar JavaScript, dari fundamental, sintaks dan fitur
-              ES6, hingga konsep automation test menggunakan framework populer.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/bfec21bde2a5c159e8de8bd71c72a08d4252a43a/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="frontend">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Menjadi Front-End Web Developer Expert
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Mempelajari teknik-teknik expert serta modern dalam membangun
-              website yang optimal pada seluruh perangkat, terutama pada
-              perangkat mobile.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/8cfb1c848a49c13d2c36a92a5782f37340271232/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="ml">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Memulai Pemrograman dengan Python
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Mempelajari dasar pemrograman Python hingga library populer yang
-              menjadi landasan tren industri seperti data science dan machine
-              learning.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/cf20e1c41171682a9b9d4b64b627cd2908032651/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="ml">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Belajar Machine Learning untuk Pemula
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Mempelajari materi dasar pengembangan machine learning dan langkah
-              menciptakan model machine learning pertama untuk memproses data.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/4cd407811c02d3487e1fe3350e7a902bba3c6e9b/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="ml">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Belajar Dasar Visualisasi Data
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Mempelajari teknik dasar untuk representasi hasil secara visual
-              sehingga dapat menceritakan dan mempresentasikan data secara
-              efektif.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/2765c632ba04fe1903cc0d4ecb3bfffb03ffe4af/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
-          </li>
-          <li class="col-lg-5 col-10" data-category="frontend">
-            <div class="d-flex gap-3 align-items-center certificate-title">
-              <h5 class="text-warning text-start">
-                Belajar Fundamental Front-End Web Development
-              </h5>
-            </div>
-            <p class="text-light mt-3">
-              Mempelajari sintaks ES6, Web Component, dan Build Tools dalam
-              membangun website dengan teknik yang simple, reusable, dan
-              optimized.
-            </p>
-            <a
-              href="https://www.dicoding.com/dicodingassets/coursecertificate/edbb056cb2a52431d7093df05a1f43e420e59b6c/view"
-            >
-              <button class="mt-2 fw-semibold">Lihat Sertifikat</button>
-            </a>
+          <li class="social-media d-flex" style="margin-top: -10px">
+            <a data-aos="zoom-in" data-aos-duration="700" href="https://web.facebook.com/musthofa.ilmi.16"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200" href="https://twitter.com/Shoya_m1"><i
+                class="fa-brands fa-twitter"></i></a>
+            <a data-aos="zoom-in" data-aos-duration="700" data-aos-delay="400"
+              href="https://api.whatsapp.com/send/?phone=6285259476727&text&type=phone_number&app_absent=0"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a data-aos="zoom-in" data-aos-duration="700" data-aos-delay="600"
+              href="https://github.com/shoya-m1?tab=repositories"><i class="fa-brands fa-github"></i></a>
+            <a data-aos="zoom-in" data-aos-duration="700" data-aos-delay="800"
+              href="https://www.instagram.com/shoya_m1/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i
+                class="fa-brands fa-instagram"></i></a>
           </li>
         </ul>
       </div>
-    </section>
-    <!-- /certificate  -->
 
-    <!-- Tools  -->
-    <section id="tools">
-      <div class="container position-relative mt-5 pt-5">
-        <span
-          class="position-absolute rounded-circle z-n1"
-          data-aos="fade-left"
-          data-aos-duration="900"
-        ></span>
-        <div data-aos="fade-right" data-aos-duration="900">
-          <p class="tools-style position-absolute">Tools</p>
-        </div>
-        <div class="mb-5 pb-lg-5 caption col-lg-5 text-center m-auto">
-          <p class="text-warning" data-aos="fade-down" data-aos-duration="900">
-            Tools & Skills
-          </p>
-          <h1
-            class="text-light fw-semibold"
-            data-aos="fade-up"
-            data-aos-duration="900"
-          >
-            Tools & Skills yang saya Pelajari
-          </h1>
-        </div>
+      <footer class="shadow-lg mt-5 col-12">
+        <p class="p-4 text-center">
+          &copy; 2023. Project Porfolio By Musthofa Ilmi
+        </p>
+      </footer>
+    </div>
+  </section>
 
-        <ul
-          class="mt-5 tools-content row flex-wrap gap-5 col-12 justify-content-center align-items-center"
-          style="list-style: none"
-        >
-          <li
-            class="text-center col-lg-3 col-md-5 col-10"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-          >
-            <i class="fa-brands fa-html5"></i>
-            <h4 class="lh-lg text-warning">Html</h4>
-            <p class="text-light">
-              Bahasa markup yang saya gunakan untuk membuat kerangkan pada
-              halaman website
-            </p>
-          </li>
-          <li
-            class="text-center col-lg-3 col-md-5 col-9"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="300"
-          >
-            <i class="fa-brands fa-css3-alt"></i>
-            <h4 class="lh-lg text-warning">CSS</h4>
-            <p class="text-light">
-              Teknologi yang saya gunakan untuk mendesain komponen dalam sebuah
-              website
-            </p>
-          </li>
-          <li
-            class="text-center col-lg-3 col-md-5 col-10"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="600"
-          >
-            <i class="fa-brands fa-square-js"></i>
-            <h4 class="lh-lg text-warning">JavaScript</h4>
-            <p class="text-light">
-              Bahasa pemrograman yang saya gunakan untuk membuat website menjadi
-              lebih interaktif
-            </p>
-          </li>
-          <li
-            class="text-center col-lg-3 col-md-5 col-10"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-          >
-            <i class="fa-brands fa-figma"></i>
-            <h4 class="lh-lg text-warning">Figma</h4>
-            <p class="text-light">
-              Tools yang biasa saya gunakan untuk membuat desain ui/ux halaman
-              web dan mobile
-            </p>
-          </li>
-          <li
-            class="text-center col-lg-3 col-md-5 col-10"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="300"
-          >
-            <i class="fa-brands fa-bootstrap"></i>
-            <h4 class="lh-lg text-warning">Bootstrap</h4>
-            <p class="text-light">
-              Library CSS yang dapat membantu saya dalam pengembangan sebuah
-              halaman website
-            </p>
-          </li>
-          <li
-            class="text-center col-lg-3 col-md-5 col-10"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="600"
-          >
-            <!-- <i class="fa-brands fa-php" style="font-size: 40px"></i> -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="3.5em"
-              height="3.5em"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12"
-              />
-            </svg>
-            <h4 class="lh-md text-warning">Tailwind</h4>
-            <p class="text-light">
-              Library CSS yang dapat membantu saya dalam pengembangan sebuah
-              halaman website
-            </p>
-          </li>
-          <li
-            class="text-center col-lg-3 col-md-5 col-10"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-          >
-            <i class="fa-brands fa-react"></i>
-            <h4 class="lh-lg text-warning">React</h4>
-            <p class="text-light">
-              Library javascript yang membantu saya dalam pengembangan sebuah
-              halaman website
-            </p>
-          </li>
-          <li
-            class="text-center col-lg-3 col-md-5 col-10"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="300"
-          >
-            <i class="fa-brands fa-laravel"></i>
-            <h4 class="lh-lg text-warning">Laravel</h4>
-            <p class="text-light">
-              Framework PHP yang membantu saya dalam pengembangan website pada
-              sisi server side
-            </p>
-          </li>
-          <li
-            class="text-center col-lg-3 col-md-5 col-10"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="600"
-          >
-            <i class="fa-brands fa-sass"></i>
-            <h4 class="lh-lg text-warning">Sass</h4>
-            <p class="text-light">
-              Tools yang membantu saya dalam penulisan kode css agar lebih
-              efisien
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- /Tools  -->
+  <!-- /Contact -->
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="overflow-hidden">
-      <div class="position-relative container-xxl mt-5 pt-5">
-        <span
-          class="position-absolute rounded-circle z-n1"
-          data-aos="fade-right"
-          data-aos-duration="900"
-        ></span>
-        <t
-          class="position-absolute"
-          data-aos="fade-left"
-          data-aos-duration="900"
-          data-aos-easing="liner"
-          >Portfolio</t
-        >
-        <div class="caption m-auto col-lg-4 text-center">
-          <p class="text-warning" data-aos="fade-down" data-aos-duration="900">
-            My Project
-          </p>
-          <h1
-            class="text-light fw-bold"
-            data-aos="fade-up"
-            data-aos-duration="900"
-          >
-            Projek yang pernah saya buat
-          </h1>
-        </div>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
 
-        <ul
-          class="content-portfolio list-unstyled container pt-5 d-flex flex-wrap justify-content-center me-3 gap-lg-4 gap-md-3 gap-2"
-        >
-          <li
-            class="rounded-1 col-lg-5 col-sm-10 position-relative overflow-hidden"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-          >
-            <img class="object-fit-cover" src="Asset/portfolio1.png" alt="" />
-            <div class="z-3 position-absolute content-portfolio-1 bg-black row">
-              <div class="m-auto col-9">
-                <h2 class="text-warning">Food Delivery</h2>
-                <p class="text-secondary">Ui/Ux</p>
-                <p class="text-light fw-lighter">
-                  Tampilan UI website pengiriman makanan yang di buat
-                  menggunakan tools figma
-                </p>
-                <span class="fw-semibold">
-                  <a
-                    href="https://www.figma.com/proto/eKgEo4BX3hi8wATZHlWpGK/Untitled?node-id=88-94&scaling=scale-down&page-id=0%3A1&starting-point-node-id=88%3A94"
-                  >
-                    View More
-                    <i
-                      class="fa-solid fa-arrow-right ms-2"
-                      style="margin-top: -100px"
-                    ></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </li>
-          <li
-            class="rounded-1 col-lg-5 col-sm-10 position-relative overflow-hidden"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-            data-aos-duration="900"
-          >
-            <img
-              class="BookShelf object-fit-cover"
-              src="Asset/portfolio2.png"
-              alt=""
-            />
-            <div class="z-3 position-absolute content-portfolio-1 bg-black row">
-              <div class="m-auto col-9">
-                <h2 class="text-warning">Book Shelf</h2>
-                <p class="text-secondary">Website</p>
-                <p class="text-light fw-lighter">
-                  Web Peyimpanan buku dengan menggunakan metode penyimpanan web
-                  storage
-                </p>
-                <span class="fw-semibold">
-                  <a href="https://shoya-m1.github.io/BookShelf">
-                    View More
-                    <i
-                      class="fa-solid fa-arrow-right ms-2"
-                      style="margin-top: -100px"
-                    ></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </li>
-          <li
-            class="rounded-1 col-lg-5 col-sm-10 position-relative overflow-hidden"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-          >
-            <img class="object-fit-cover" src="Asset/restomap1.png" alt="" />
-            <div class="content-portfolio-1 z-3 position-absolute bg-black row">
-              <div class="m-auto col-9">
-                <h2 class="text-warning">Restomap</h2>
-                <p class="text-secondary">Website</p>
-                <p class="text-light fw-lighter">
-                  Website katalog restorant yang mendukung fitur PWA
-                  (Progressive Web Application)
-                </p>
-                <span class="fw-semibold">
-                  <a href="http://restomap-v2.vercel.app/">
-                    View More
-                    <i
-                      class="fa-solid fa-arrow-right ms-2"
-                      style="margin-top: -100px"
-                    ></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </li>
-          <li
-            class="rounded-1 col-lg-5 col-sm-10 position-relative overflow-hidden"
-            data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="400"
-          >
-            <img class="object-fit-cover" src="Asset/portfolio4.png" alt="" />
-            <div class="z-3 position-absolute content-portfolio-1 bg-black row">
-              <div class="m-auto col-9">
-                <h2 class="text-warning">E-Commerce</h2>
-                <p class="text-secondary">Ui/Ux</p>
-                <p class="text-light fw-lighter">
-                  Tampilan UI website e-commerce Electronik yang saya buat
-                  menggunakan tools figma
-                </p>
-                <span class="fw-semibold">
-                  <a
-                    href="https://www.figma.com/proto/F1YsUUhdtNNVTBnp6mRgqi/Untitled?type=design&node-id=1-2&t=jp50mtXwMcHADFgo-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"
-                  >
-                    View More
-                    <i
-                      class="fa-solid fa-arrow-right ms-2"
-                      style="margin-top: -100px"
-                    ></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- /Portfolio -->
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 
-    <!-- Contact -->
-    <section id="contact" class="overflow-hidden">
-      <div class="position-relative container mt-5 pt-5">
-        <span
-          data-aos="fade-left"
-          data-aos-duration="900"
-          class="style-contact z-n1 rounded-circle position-absolute"
-        ></span>
-        <div data-aos="zoom-in" data-aos-duration="900">
-          <p class="style-contact-text z-n1 position-absolute">Contact</p>
-        </div>
+  <!-- Aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <div class="caption text-center">
-          <p class="text-warning" data-aos="fade-down" data-aos-duration="900">
-            Let's say hi
-          </p>
-          <h1
-            class="text-light fw-bold lh-1 mb-5"
-            data-aos="fade-up"
-            data-aos-duration="900"
-          >
-            Hubungi Saya
-          </h1>
-        </div>
-        <div
-          class="d-flex justify-content-center gap-4 align-items-center flex-wrap"
-        >
-          <form
-            id="contactForm"
-            class="position-relative col-lg-5 py-lg-0 pt-5"
-          >
-            <input
-              data-aos="fade-right"
-              data-aos-duration="900"
-              data-aos-delay="500"
-              class="col-12 border rounded-2 border-secondary px-3 mb-3"
-              type="text"
-              placeholder="Username"
-              id="name"
-              name="name"
-              required
-            />
-            <input
-              data-aos="fade-right"
-              data-aos-duration="900"
-              data-aos-delay="700"
-              class="col-12 border rounded-2 border-secondary p-3 mb-3"
-              type="email"
-              id="floatingInput"
-              placeholder="Email"
-              name="email"
-              required
-            />
-            <textarea
-              data-aos="fade-right"
-              data-aos-duration="900"
-              data-aos-delay="800"
-              class="border rounded-2 border-secondary p-3 col-12 mb-3"
-              rows="7"
-              placeholder="Pesan anda"
-              name="message"
-              required
-            ></textarea>
+  <!-- Javascript -->
+  <script src="index.js"></script>
 
-            <div class="col-12 d-flex">
-              <button
-                id="button-sendform"
-                data-aos="zoom-in-up"
-                data-aos-duration="900"
-                data-aos-delay="1000"
-                class="m-auto rounded-2 col-5 fw-semibold"
-              >
-                Kirim Pesan
-              </button>
-            </div>
-          </form>
+  <!-- Typit Js -->
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 
-          <ul class="addreas col-lg-5 py-lg-0 py-5 list-unstyled">
-            <p
-              data-aos="fade-left"
-              data-aos-durration="1000"
-              data-aos-delay="500"
-              class="text-light lh-sm"
-            >
-              Jika ada yang ingin di tanyakan silahkan hubungi saya melalui no
-              atau email dibawah
-            </p>
-            <li class="d-flex mt-4 mb-3">
-              <i
-                data-aos="zoom-in"
-                data-aos-duration="500"
-                data-aos-delay="700"
-                class="contact-icon text-light text-center me-4 fa-solid fa-envelope"
-              ></i>
-              <div
-                data-aos="fade-left"
-                data-aos-duration="900"
-                data-aos-delay="900"
-              >
-                <h5 class="text-warning">Email</h5>
-                <p class="text-light lh-1 fw-lighter">
-                  ilmimusthofa8189@gmail.com
-                </p>
-              </div>
-            </li>
-            <li class="d-flex mb-2">
-              <i
-                data-aos="zoom-in"
-                data-aos-duration="500"
-                data-aos-delay="700"
-                class="contact-icon text-light text-center mt-2 me-4 fa-solid fa-phone"
-              ></i>
-              <div
-                data-aos="fade-left"
-                data-aos-duration="900"
-                data-aos-delay="900"
-              >
-                <h5 class="text-warning">No Telp</h5>
-                <p class="text-light fw-lighter">+62 85259476727</p>
-                <p class="text-light fw-lighter" style="margin-top: -15px">
-                  +62 82198738908
-                </p>
-              </div>
-            </li>
-            <li class="d-flex col-10">
-              <i
-                data-aos="zoom-in"
-                data-aos-duration="500"
-                data-aos-delay="700"
-                class="contact-icon text-light text-center me-4 p-auto fa-solid fa-location-dot"
-              ></i>
-              <div
-                data-aos="fade-left"
-                data-aos-duration="900"
-                data-aos-delay="900"
-              >
-                <h5 class="text-warning">Alamat</h5>
-                <p class="text-light lh-sm fw-lighter">
-                  64474 Ds.Sidorejo Kec.Sawahan Kab.Anganjuk
-                </p>
-              </div>
-            </li>
-            <p data-aos="fade-left" data-aos-duration="900" class="text-light">
-              Anda juka bisa menghubungi saya melalui link media sosial
-            </p>
-            <li class="social-media d-flex" style="margin-top: -10px">
-              <a
-                data-aos="zoom-in"
-                data-aos-duration="700"
-                href="https://web.facebook.com/musthofa.ilmi.16"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a
-                data-aos="zoom-in"
-                data-aos-duration="700"
-                data-aos-delay="200"
-                href="https://twitter.com/Shoya_m1"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a
-                data-aos="zoom-in"
-                data-aos-duration="700"
-                data-aos-delay="400"
-                href="https://api.whatsapp.com/send/?phone=6285259476727&text&type=phone_number&app_absent=0"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-              <a
-                data-aos="zoom-in"
-                data-aos-duration="700"
-                data-aos-delay="600"
-                href="https://github.com/shoya-m1?tab=repositories"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a
-                data-aos="zoom-in"
-                data-aos-duration="700"
-                data-aos-delay="800"
-                href="https://www.instagram.com/shoya_m1/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+  <!-- Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
 
-        <footer class="shadow-lg mt-5 col-12">
-          <p class="p-4 text-center">
-            &copy; 2023. Project Porfolio By Musthofa Ilmi
-          </p>
-        </footer>
-      </div>
-    </section>
-
-    <!-- /Contact -->
-
-    <!-- JQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.js"
-      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-
-    <!-- Aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Javascript -->
-    <script src="index.js"></script>
-
-    <!-- Typit Js -->
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-
-    <!-- Boostrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
